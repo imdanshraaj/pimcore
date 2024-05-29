@@ -269,7 +269,7 @@ abstract class AbstractListing extends AbstractModel implements \Iterator, \Coun
                 } elseif (is_int($param)) {
                     $type = ParameterType::INTEGER;
                 } elseif (is_null($param)) {
-                    $type = ParameterType::NULL;
+                    $type = ParameterType::null;
                 } else {
                     $type = ParameterType::STRING;
                 }
