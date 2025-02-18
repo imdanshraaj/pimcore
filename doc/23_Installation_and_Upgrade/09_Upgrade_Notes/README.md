@@ -25,8 +25,15 @@
 #### [Mail]
 - If sender is not set in the mail, instead of setting a default `from` address, an exception is now thrown.
 
+#### [Models]
+- Method `getById()` now only accepts `int` as the first parameter. 
+- Interface `ElementInterface` now has `array $params = []` as the second parameter for `getById()`.
+
 #### [Navigation]
 - Remove deprecated `$_defaultPageType` from `Pimcore\Navigation\Page`.
+
+#### [Select Options]
+- Add 'Admin only' configuration to restrict access to admin users
 
 #### [Templates]
 - Removed `key_value_table.html.twig` from `CoreBundle`
