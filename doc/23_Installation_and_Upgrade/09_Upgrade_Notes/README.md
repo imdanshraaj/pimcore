@@ -15,7 +15,7 @@
 - Parameter `$index` of method `setIndex` is not nullable anymore in `Pimcore\Model\DataObject\ClassDefinition\Data`.
 - Removed deprecated `getThumbnailConfig()` method from `Pimcore\Model\Asset\Image`.
 
-### [Events]
+#### [Events]
 - Removed `context` property of `ResolveUploadTargetEvent`.
 
 #### [Lib]
@@ -40,6 +40,11 @@
 
 #### [Workflow]
 - Method `getWorkflowByName()` now returns `?WorkflowInterface` instead of `?object`. This also affected the `lib/Workflow/Notification/NotificationEmailService.php` and `lib/Workflow/Notification/PimcoreNotificationService.php`.
+
+### Custom Reports
+- add function `getColumnsWithMetadata` to `bundles/CustomReportsBundle/src/Tool/Adapter/CustomReportAdapterInterface.php`
+- add function `getPagination` to `bundles/CustomReportsBundle/src/Tool/Adapter/CustomReportAdapterInterface.php`
+- change parameter types of `getData` in `bundles/CustomReportsBundle/src/Tool/Adapter/AbstractAdapter.php`
 
 ## Pimcore 11.6.0
 ### Elements
